@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct ikenie_iosApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

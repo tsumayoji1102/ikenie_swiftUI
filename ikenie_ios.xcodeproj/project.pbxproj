@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E78B48F92CAD860600D5D0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B48F82CAD860600D5D0AC /* AppDelegate.swift */; };
+		E78B48FB2CAD91BD00D5D0AC /* FlutterContainedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B48FA2CAD91BD00D5D0AC /* FlutterContainedViewController.swift */; };
 		E7E206512C324BAE00D69871 /* ikenie_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E206502C324BAE00D69871 /* ikenie_iosApp.swift */; };
 		E7E206532C324BAE00D69871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E206522C324BAE00D69871 /* ContentView.swift */; };
 		E7E206552C324BB000D69871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E206542C324BB000D69871 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E78B48F82CAD860600D5D0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E78B48FA2CAD91BD00D5D0AC /* FlutterContainedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterContainedViewController.swift; sourceTree = "<group>"; };
 		E7E2064D2C324BAE00D69871 /* ikenie_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikenie_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E206502C324BAE00D69871 /* ikenie_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikenie_iosApp.swift; sourceTree = "<group>"; };
 		E7E206522C324BAE00D69871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,9 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				E7E206502C324BAE00D69871 /* ikenie_iosApp.swift */,
+				E78B48F82CAD860600D5D0AC /* AppDelegate.swift */,
 				E7E206522C324BAE00D69871 /* ContentView.swift */,
 				E7E206542C324BB000D69871 /* Assets.xcassets */,
 				E7E206562C324BB000D69871 /* Preview Content */,
+				E78B48FA2CAD91BD00D5D0AC /* FlutterContainedViewController.swift */,
 			);
 			path = ikenie_ios;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78B48F92CAD860600D5D0AC /* AppDelegate.swift in Sources */,
+				E78B48FB2CAD91BD00D5D0AC /* FlutterContainedViewController.swift in Sources */,
 				E7E206532C324BAE00D69871 /* ContentView.swift in Sources */,
 				E7E206512C324BAE00D69871 /* ikenie_iosApp.swift in Sources */,
 			);
