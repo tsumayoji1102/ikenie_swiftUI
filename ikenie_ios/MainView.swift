@@ -7,15 +7,49 @@
 
 import SwiftUI
 
-struct MainView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+enum Tabs: Int, CaseIterable {
+    case home = 0
+    case favorites
+    case settings
+    
+    var iconName: String {
+        switch self {
+        case .home:
+            return "house"
+        case .favorites:
+            return "bookmark"
+        case .settings:
+            return "gearshape"
         }
-        .padding()
+    }
+    
+    @ViewBuilder
+    func view() -> some View {
+        switch self {
+            case .home:
+            HomeView()
+        case .favorites:
+            FavoriteView()
+        case .settings:
+            SettingView()
+        }
+    }
+}
+
+struct MainView: View {
+    
+    @State private var selectedTab: Tabs = .home
+    
+    var body: some View {
+        TabView(content: {
+            ForEach(Tabs.allCases, id: \.self) { tab in
+                tab.view()
+                    .tabItem {
+                        Image(systemName: tab.iconName)
+                    }
+                    .tag(tab)
+            }
+        })
     }
 }
 
