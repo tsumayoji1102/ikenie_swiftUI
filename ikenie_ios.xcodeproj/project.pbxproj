@@ -12,6 +12,7 @@
 		E7A520772DCA50F7009510E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A520752DCA50F7009510E0 /* HomeView.swift */; };
 		E7A520792DCA510A009510E0 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A520782DCA510A009510E0 /* FavoriteView.swift */; };
 		E7A5207B2DCA5115009510E0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5207A2DCA5115009510E0 /* SettingView.swift */; };
+		E7BF47D02DCD07E000ED3F2F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF47CF2DCD07E000ED3F2F /* HomeViewModel.swift */; };
 		E7E206512C324BAE00D69871 /* ikenie_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E206502C324BAE00D69871 /* ikenie_iosApp.swift */; };
 		E7E206532C324BAE00D69871 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E206522C324BAE00D69871 /* MainView.swift */; };
 		E7E206552C324BB000D69871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E206542C324BB000D69871 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		E7A520752DCA50F7009510E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E7A520782DCA510A009510E0 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		E7A5207A2DCA5115009510E0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		E7BF47CF2DCD07E000ED3F2F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E7E2064D2C324BAE00D69871 /* ikenie_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikenie_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E206502C324BAE00D69871 /* ikenie_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikenie_iosApp.swift; sourceTree = "<group>"; };
 		E7E206522C324BAE00D69871 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -84,11 +86,20 @@
 		E7A520762DCA50F7009510E0 /* tabs */ = {
 			isa = PBXGroup;
 			children = (
-				E7A520752DCA50F7009510E0 /* HomeView.swift */,
+				E7BF47CE2DCD07CA00ED3F2F /* Home */,
 				E7A520782DCA510A009510E0 /* FavoriteView.swift */,
 				E7A5207A2DCA5115009510E0 /* SettingView.swift */,
 			);
 			path = tabs;
+			sourceTree = "<group>";
+		};
+		E7BF47CE2DCD07CA00ED3F2F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E7A520752DCA50F7009510E0 /* HomeView.swift */,
+				E7BF47CF2DCD07E000ED3F2F /* HomeViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		E7E206442C324BAE00D69871 = {
@@ -283,6 +294,7 @@
 				E78B48F92CAD860600D5D0AC /* AppDelegate.swift in Sources */,
 				E78B48FB2CAD91BD00D5D0AC /* FlutterContainedViewController.swift in Sources */,
 				E7E206532C324BAE00D69871 /* MainView.swift in Sources */,
+				E7BF47D02DCD07E000ED3F2F /* HomeViewModel.swift in Sources */,
 				E7A5207B2DCA5115009510E0 /* SettingView.swift in Sources */,
 				E7A520772DCA50F7009510E0 /* HomeView.swift in Sources */,
 				E7A520792DCA510A009510E0 /* FavoriteView.swift in Sources */,
