@@ -31,7 +31,6 @@ struct HomeView: View {
             .frame(maxHeight: .infinity)
         }
         .padding(.all, 20)
-        .ignoresSafeArea(.all, edges: .bottom)
     }
 }
 

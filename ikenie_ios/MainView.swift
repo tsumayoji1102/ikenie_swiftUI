@@ -40,8 +40,12 @@ struct MainView: View {
     
     @State private var selectedTab: Tabs = .home
     
+    init() {
+        UITabBar.appearance().unselectedItemTintColor = UIColor.systemBlue
+    }
+    
     var body: some View {
-        TabView(content: {
+        TabView {
             ForEach(Tabs.allCases, id: \.self) { tab in
                 tab.view()
                     .tabItem {
@@ -49,7 +53,10 @@ struct MainView: View {
                     }
                     .tag(tab)
             }
-        })
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+        .tint(.red)
+        
     }
 }
 
