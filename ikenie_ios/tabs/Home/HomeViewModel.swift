@@ -8,11 +8,22 @@
 import Foundation
 
 class HomeViewModel: ObservableObject {
-    @Published var texts: Array<String> = ["Hello, World!"]
+    @Published var allTexts: Array<String> = []
+    @Published var showingTexts: Array<String> = []
+    @Published var searchText: String = ""
     
     init() {
         for i in 0..<100 {
-            texts.append("Hello, World! \(i)")
+            allTexts.append("Hello, World! \(i)")
+            showingTexts = allTexts
         }
+    }
+    
+    func search(_ text: String) {
+        if(text.isEmpty){
+            showingTexts = allTexts
+            return
+        }
+        showingTexts = allTexts.filter { $0.contains(text) }
     }
 }

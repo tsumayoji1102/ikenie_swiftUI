@@ -15,15 +15,18 @@ struct HomeView: View {
             Text("Hello, World!")
                 .fontWeight(.bold)
             
-            TextField("Enter your name", text: .constant(""))
+            TextField("Enter your name", text: $viewModel.searchText)
                 .padding(.leading, 5)
                 .padding(.vertical, 5)
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(5)
+                .onChange(of: viewModel.searchText) { old, new in
+                    viewModel.search(new)
+                }
             
             ScrollView {
                 LazyVStack(alignment: .leading) {
-                    ForEach(viewModel.texts, id: \.self) { text in
+                    ForEach(viewModel.showingTexts, id: \.self) { text in
                         Text(text)
                     }
                 }
