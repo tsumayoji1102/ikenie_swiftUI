@@ -10,7 +10,7 @@
 		E78B48F92CAD860600D5D0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B48F82CAD860600D5D0AC /* AppDelegate.swift */; };
 		E78B48FB2CAD91BD00D5D0AC /* FlutterContainedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B48FA2CAD91BD00D5D0AC /* FlutterContainedViewController.swift */; };
 		E7A520772DCA50F7009510E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A520752DCA50F7009510E0 /* HomeView.swift */; };
-		E7A520792DCA510A009510E0 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A520782DCA510A009510E0 /* FavoriteView.swift */; };
+		E7A520792DCA510A009510E0 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A520782DCA510A009510E0 /* RouterView.swift */; };
 		E7A5207B2DCA5115009510E0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5207A2DCA5115009510E0 /* SettingView.swift */; };
 		E7BF47D02DCD07E000ED3F2F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF47CF2DCD07E000ED3F2F /* HomeViewModel.swift */; };
 		E7E206512C324BAE00D69871 /* ikenie_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E206502C324BAE00D69871 /* ikenie_iosApp.swift */; };
@@ -43,7 +43,7 @@
 		E78B48F82CAD860600D5D0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78B48FA2CAD91BD00D5D0AC /* FlutterContainedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterContainedViewController.swift; sourceTree = "<group>"; };
 		E7A520752DCA50F7009510E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		E7A520782DCA510A009510E0 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		E7A520782DCA510A009510E0 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		E7A5207A2DCA5115009510E0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		E7BF47CF2DCD07E000ED3F2F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E7E2064D2C324BAE00D69871 /* ikenie_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikenie_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E7BF47CE2DCD07CA00ED3F2F /* Home */,
-				E7A520782DCA510A009510E0 /* FavoriteView.swift */,
+				E7A520782DCA510A009510E0 /* RouterView.swift */,
 				E7A5207A2DCA5115009510E0 /* SettingView.swift */,
 			);
 			path = tabs;
@@ -297,7 +297,7 @@
 				E7BF47D02DCD07E000ED3F2F /* HomeViewModel.swift in Sources */,
 				E7A5207B2DCA5115009510E0 /* SettingView.swift in Sources */,
 				E7A520772DCA50F7009510E0 /* HomeView.swift in Sources */,
-				E7A520792DCA510A009510E0 /* FavoriteView.swift in Sources */,
+				E7A520792DCA510A009510E0 /* RouterView.swift in Sources */,
 				E7E206512C324BAE00D69871 /* ikenie_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

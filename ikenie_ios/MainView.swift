@@ -29,7 +29,7 @@ enum Tabs: Int, CaseIterable {
             case .home:
             HomeView()
         case .favorites:
-            FavoriteView()
+            RouterView()
         case .settings:
             SettingView()
         }

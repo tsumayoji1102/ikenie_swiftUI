@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct FavoriteView: View {
+struct RouterView: View {
     var body: some View {
         Text("Hello, World! From FavoriteView")
     }
 }
 
 #Preview {
-    FavoriteView()
+    RouterView()
 }
