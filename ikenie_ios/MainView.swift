@@ -29,9 +29,9 @@ enum Tabs: Int, CaseIterable {
             case .home:
             HomeView()
         case .favorites:
-            RouterView()
+            GithubView()
         case .settings:
-            SettingView()
+            StudyTaskAppView()
         }
     }
 }

@@ -11,29 +11,32 @@ struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Hello, World!")
-                .fontWeight(.bold)
-            
-            TextField("Enter your name", text: $viewModel.searchText)
-                .padding(.leading, 5)
-                .padding(.vertical, 5)
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5)
-                .onChange(of: viewModel.searchText) { old, new in
-                    viewModel.search(new)
-                }
-            
-            ScrollView {
-                LazyVStack(alignment: .leading) {
-                    ForEach(viewModel.showingTexts, id: \.self) { text in
-                        Text(text)
+        NavigationStack {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Hello, World!")
+                    .fontWeight(.bold)
+                
+                TextField("Enter your name", text: $viewModel.searchText)
+                    .padding(.leading, 5)
+                    .padding(.vertical, 5)
+                    .background(Color.gray.opacity(0.2))
+                    .cornerRadius(5)
+                    .onChange(of: viewModel.searchText) { old, new in
+                        viewModel.search(new)
+                    }
+                
+                ScrollView {
+                    LazyVStack(alignment: .leading) {
+                        ForEach(viewModel.showingTexts, id: \.self) { text in
+                            Text(text)
+                        }
                     }
                 }
+                .frame(maxHeight: .infinity)
             }
-            .frame(maxHeight: .infinity)
+            .padding(.all, 20)
+            .navigationTitle("Home")
         }
-        .padding(.all, 20)
     }
 }
 
