@@ -15,6 +15,9 @@
 		E78B48F92CAD860600D5D0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B48F82CAD860600D5D0AC /* AppDelegate.swift */; };
 		E78B48FB2CAD91BD00D5D0AC /* FlutterContainedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B48FA2CAD91BD00D5D0AC /* FlutterContainedViewController.swift */; };
 		E7A520772DCA50F7009510E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A520752DCA50F7009510E0 /* HomeView.swift */; };
+		E7A755A52DEFF5C100AE06C6 /* PracticeClosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A755A32DEFF5C100AE06C6 /* PracticeClosureView.swift */; };
+		E7A755A72DEFF5E100AE06C6 /* PracticeListClosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A755A62DEFF5E100AE06C6 /* PracticeListClosureView.swift */; };
+		E7A755AA2DF0066D00AE06C6 /* PracticeViewClosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A755A92DF0066D00AE06C6 /* PracticeViewClosureView.swift */; };
 		E7BF47D02DCD07E000ED3F2F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF47CF2DCD07E000ED3F2F /* HomeViewModel.swift */; };
 		E7E206512C324BAE00D69871 /* ikenie_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E206502C324BAE00D69871 /* ikenie_iosApp.swift */; };
 		E7E206532C324BAE00D69871 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E206522C324BAE00D69871 /* MainView.swift */; };
@@ -23,6 +26,7 @@
 		E7E206622C324BB000D69871 /* ikenie_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E206612C324BB000D69871 /* ikenie_iosTests.swift */; };
 		E7E2066C2C324BB000D69871 /* ikenie_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E2066B2C324BB000D69871 /* ikenie_iosUITests.swift */; };
 		E7E2066E2C324BB000D69871 /* ikenie_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E2066D2C324BB000D69871 /* ikenie_iosUITestsLaunchTests.swift */; };
+		E7FD523A2DE6206C0071AC4C /* ObservableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD52392DE6206C0071AC4C /* ObservableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,9 @@
 		E78B48F82CAD860600D5D0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78B48FA2CAD91BD00D5D0AC /* FlutterContainedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterContainedViewController.swift; sourceTree = "<group>"; };
 		E7A520752DCA50F7009510E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E7A755A32DEFF5C100AE06C6 /* PracticeClosureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeClosureView.swift; sourceTree = "<group>"; };
+		E7A755A62DEFF5E100AE06C6 /* PracticeListClosureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeListClosureView.swift; sourceTree = "<group>"; };
+		E7A755A92DF0066D00AE06C6 /* PracticeViewClosureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewClosureView.swift; sourceTree = "<group>"; };
 		E7BF47CF2DCD07E000ED3F2F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E7E2064D2C324BAE00D69871 /* ikenie_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikenie_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E206502C324BAE00D69871 /* ikenie_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikenie_iosApp.swift; sourceTree = "<group>"; };
@@ -62,6 +69,7 @@
 		E7E206672C324BB000D69871 /* ikenie_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ikenie_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E2066B2C324BB000D69871 /* ikenie_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikenie_iosUITests.swift; sourceTree = "<group>"; };
 		E7E2066D2C324BB000D69871 /* ikenie_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikenie_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E7FD52392DE6206C0071AC4C /* ObservableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +126,23 @@
 		E7A520762DCA50F7009510E0 /* tabs */ = {
 			isa = PBXGroup;
 			children = (
+				E7A755A42DEFF5C100AE06C6 /* Practice */,
+				E7FD52382DE620580071AC4C /* Obsevable */,
 				E7670F262DDC9B8600930714 /* Setting */,
 				E7670E332DD4EC4A00930714 /* Github */,
 				E7BF47CE2DCD07CA00ED3F2F /* Home */,
 			);
 			path = tabs;
+			sourceTree = "<group>";
+		};
+		E7A755A42DEFF5C100AE06C6 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				E7A755A32DEFF5C100AE06C6 /* PracticeClosureView.swift */,
+				E7A755A62DEFF5E100AE06C6 /* PracticeListClosureView.swift */,
+				E7A755A92DF0066D00AE06C6 /* PracticeViewClosureView.swift */,
+			);
+			path = Practice;
 			sourceTree = "<group>";
 		};
 		E7BF47CE2DCD07CA00ED3F2F /* Home */ = {
@@ -192,6 +212,14 @@
 				E7E2066D2C324BB000D69871 /* ikenie_iosUITestsLaunchTests.swift */,
 			);
 			path = ikenie_iosUITests;
+			sourceTree = "<group>";
+		};
+		E7FD52382DE620580071AC4C /* Obsevable */ = {
+			isa = PBXGroup;
+			children = (
+				E7FD52392DE6206C0071AC4C /* ObservableView.swift */,
+			);
+			path = Obsevable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,13 +352,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A755A52DEFF5C100AE06C6 /* PracticeClosureView.swift in Sources */,
 				E78B48F92CAD860600D5D0AC /* AppDelegate.swift in Sources */,
 				E7670F272DDC9B8600930714 /* SettingView.swift in Sources */,
 				E7670F292DDC9F3D00930714 /* StudyTaskAppView.swift in Sources */,
 				E78B48FB2CAD91BD00D5D0AC /* FlutterContainedViewController.swift in Sources */,
 				E7E206532C324BAE00D69871 /* MainView.swift in Sources */,
 				E7BF47D02DCD07E000ED3F2F /* HomeViewModel.swift in Sources */,
+				E7A755A72DEFF5E100AE06C6 /* PracticeListClosureView.swift in Sources */,
 				E7A520772DCA50F7009510E0 /* HomeView.swift in Sources */,
+				E7FD523A2DE6206C0071AC4C /* ObservableView.swift in Sources */,
+				E7A755AA2DF0066D00AE06C6 /* PracticeViewClosureView.swift in Sources */,
 				E7670E362DD4EED200930714 /* GithubViewModel.swift in Sources */,
 				E7E206512C324BAE00D69871 /* ikenie_iosApp.swift in Sources */,
 				E7670E342DD4EC4A00930714 /* GithubView.swift in Sources */,

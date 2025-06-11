@@ -13,7 +13,8 @@ struct ikenie_iosApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            GithubView()
         }
+        .modelContainer(for: TodoItem.self)
     }
 }

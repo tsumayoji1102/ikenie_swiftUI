@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct StudyTaskAppView: View {
     @State private var showAddTask = false
+    
+    /// ⑥SwiftDataで保存されているものから取得できるようにする
     @State private var tasks = [
         Task(title: "SwiftUI基礎", description: "VStackとHStackの使い方", isCompleted: true),
         Task(title: "アプリ開発演習", description: "計算機アプリを作成する", isCompleted: false),
@@ -39,9 +39,10 @@ struct StudyTaskAppView: View {
                 // タスクリスト
                 List {
                     ForEach(Array(tasks.enumerated()), id: \.element.id) { index, task in
-                        TaskRow(task: task) { task in
-                            tasks[index] = task
-                        }
+                        /// ④ここに、タスクタップ時の処理を追加
+                        TaskRow(task: task)
+//                        { task in
+//                        }
                     }
                 }
                 
@@ -95,22 +96,14 @@ struct StudyTaskAppView: View {
     }
 }
 
-// タスクモデル
-struct Task: Identifiable, Equatable {
-    let id = UUID()
-    let title: String
-    let description: String
-    var isCompleted: Bool
-}
-
 // タスク行のビュー
 struct TaskRow: View {
     private var task: Task
-    private var onTap: (Task) -> Void
+    /// ①ここにタップ時のクロージャを追加
     
-    init(task: Task, onTap: @escaping (Task) -> Void) {
+    /// ②タップ時処理を受け取る
+    init(task: Task) {
         self.task = task
-        self.onTap = onTap
     }
     
     var body: some View {
@@ -118,9 +111,7 @@ struct TaskRow: View {
             Image(systemName: task.isCompleted ? "checkmark.circle.fill" : "circle")
                 .foregroundColor(task.isCompleted ? .green : .gray)
                 .onTapGesture {
-                    var newTask = task
-                    newTask.isCompleted = !task.isCompleted
-                    onTap(newTask)
+                    /// ③タップ時の処理をこちらで使う
                 }
             
             VStack(alignment: .leading) {
@@ -169,6 +160,14 @@ struct AddTaskView: View {
         }
         
     }
+}
+
+/// SwiftDataで扱える形式に変更
+struct Task: Identifiable, Equatable {
+    let id = UUID()
+    let title: String
+    let description: String
+    var isCompleted: Bool
 }
 
 #Preview {
